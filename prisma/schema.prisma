@@ -12,7 +12,7 @@ datasource db {
 
 model Post {
   id        Int      @id @default(autoincrement())
-  title     String   @db.VarChar(100)
+  title     String   @db.VarChar(255)
   slug      String   @unique
   image     String?  @db.VarChar(255)
   content   String   @db.Text
